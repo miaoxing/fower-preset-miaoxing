@@ -56,5 +56,42 @@ setConfig({
       '8xl': '6rem',
       '9xl': '8rem',
     },
+    colors: (() => {
+      const colors = {
+        red50: '#FFECE5',
+        red100: '#FFCBB8',
+        red200: '#FFA98A',
+        red300: '#FF885C',
+        red400: '#FF662E',
+        red500: '#FF4500',
+        red600: '#CC3700',
+        red700: '#992900',
+        red800: '#661C00',
+        red900: '#330E00',
+        orange50: '#FFF4E5',
+        orange100: '#FFDFB8',
+        orange200: '#FFCB8A',
+        orange300: '#FFB75C',
+        orange400: '#FFA32E',
+        orange500: '#FF8E00', // #fb8c00
+        orange600: '#CC7200',
+        orange700: '#995500',
+        orange800: '#663900',
+        orange900: '#331C00',
+      };
+
+      const levels = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'];
+      levels.forEach(level => {
+        colors['brand' + level] = colors['red' + level];
+        colors['primary' + level] = colors['red' + level];
+        colors['secondary' + level] = colors['orange' + level];
+      });
+
+      // @experimental 可能改为其他名称或自动生成
+      colors.primaryFg500 = '#FFFFFF';
+      colors.secondaryFg500 = '#FFFFFF';
+
+      return colors;
+    })(),
   },
 });
