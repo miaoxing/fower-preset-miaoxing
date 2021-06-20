@@ -1,6 +1,6 @@
 // 覆盖 @fower/preset-taro 的配置
 import '@fower/taro';
-import {setConfig} from '@fower/core';
+import {setConfig, getConfig} from '@fower/core';
 
 setConfig({
   theme: {
@@ -80,11 +80,16 @@ setConfig({
         orange900: '#331C00',
       };
 
+      const defaultColors = getConfig().theme.colors;
+
       const levels = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900'];
       levels.forEach(level => {
         colors['brand' + level] = colors['red' + level];
         colors['primary' + level] = colors['red' + level];
         colors['secondary' + level] = colors['orange' + level];
+        colors['success' + level] = defaultColors['green' + level];
+        colors['danger' + level] = colors['red' + level];
+        colors['warning' + level] = colors['orange' + level];
       });
 
       // @experimental 可能改为其他名称或自动生成
