@@ -1,6 +1,6 @@
 // 覆盖 @fower/preset-taro 的配置
 import '@fower/taro';
-import {setConfig, getConfig} from '@fower/core';
+import {addAtom, setConfig, getConfig} from '@fower/core';
 
 const spacing = (size) => {
   return (size * 0.25) + 'rem';
@@ -74,4 +74,13 @@ setConfig({
       return colors;
     })(),
   },
+});
+
+// @experimental 考虑移到独立插件
+addAtom('truncate2', {
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  display: '-webkit-box',
+  '-webkit-line-clamp': '2',
+  '-webkit-box-orient': 'vertical',
 });
