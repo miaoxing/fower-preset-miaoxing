@@ -3,12 +3,18 @@ import '@fower/taro';
 import {addAtom, setConfig, getConfig} from '@fower/core';
 
 const spacing = (size) => {
+  if (typeof size === 'string') {
+    size = size / 10;
+  }
   return (size * 0.25) + 'rem';
 };
 
-// NOTE: prop 目前不支持小数，CSS 变量支持
+// NOTE: React prop 名称不支持小数，CSS 变量支持，但需转义，两者推荐使用 0 数字开头代替
 let spacings = {};
-[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96].map(size => {
+[
+  0, 0.5, '05', 1, 1.5, '015', 2, 2.5, '025', 3, 3.5, '035', 4, 5, 6, 7, 8, 9,
+  10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,
+].map(size => {
   spacings[size] = spacing(size);
 });
 
