@@ -6,7 +6,7 @@ const spacing = (size) => {
   if (typeof size === 'string') {
     size = size / 10;
   }
-  return (size * 0.25) + 'rem';
+  return (size * 8) + 'rpx';
 };
 
 // NOTE: React prop 名称不支持小数，CSS 变量支持，但需转义，两者推荐使用 0 数字开头代替
