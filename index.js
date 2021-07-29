@@ -2,11 +2,25 @@
 import '@fower/taro';
 import {addAtom, setConfig, getConfig} from '@fower/core';
 
+// 预期宽度 375 时，页面默认字体大小为 16，计算过程：
+// 1. taro h5 计算出字体大小为：375 / 320 * 20 = 23.4375px
+// 2. 换算为 16px，比例为：23.4375 / 16 = 1.46484375
+// 3. CSS 变量将 1rem 分成 4 份：1.46484375 * 4 = 5.859375
+// TODO 大屏处理
+const rate = 5.859375;
+
+let transform;
+if (process.env.TARO_ENV === 'h5') {
+  transform = size => size / rate + 'rem';
+} else {
+  transform = size => size * 8 + 'rpx';
+}
+
 const spacing = (size) => {
   if (typeof size === 'string') {
     size = size / 10;
   }
-  return (size * 8) + 'rpx';
+  return transform(size);
 };
 
 // NOTE: React prop 名称不支持小数，CSS 变量支持，但需转义，两者推荐使用 0 数字开头代替
