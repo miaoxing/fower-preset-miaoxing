@@ -11,8 +11,8 @@
     "preset": "jest-preset-miaoxing"
   },
   "dependencies": {
-    "@fower/taro": "^1.16.0",
-    "@fower/core": "^1.16.0",
+    "@fower/taro": "^1.52.0",
+    "@fower/core": "^1.52.0",
     "@tarojs/components": "^3.2.10"
   },
   "devDependencies": {
