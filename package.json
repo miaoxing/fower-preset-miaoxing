@@ -1,6 +1,6 @@
 {
   "name": "fower-preset-miaoxing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -16,6 +16,6 @@
     "@tarojs/components": "^3.3.10"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^7.0.1"
+    "@miaoxing/dev": "^8.0.0"
   }
 }
