@@ -1,3 +1,25 @@
+## [0.2.1](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.0...v0.2.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* 更新 `[@fower](https://github.com/fower)` 到 `^1.59.0` ([cc974e5](https://github.com/miaoxing/fower-preset-miaoxing/commit/cc974e5462d55ff0a129553195a1c7ad3c9fc5ad))
+
+
+### Features
+
+* **taro:** 限制 taro 为 3.3.x，3.4 有 BREAKING CHANGES ([9d988ef](https://github.com/miaoxing/fower-preset-miaoxing/commit/9d988ef820b04e555cd339e9b1dce7ebc242aa4a))
+* 更新 `[@fower](https://github.com/fower)` 到 `^1.61` ([6a258c6](https://github.com/miaoxing/fower-preset-miaoxing/commit/6a258c66a208a4c831ea43061d03225a28ab242f))
+* 更新 taro 到 `^3.3.20` ([13f3e60](https://github.com/miaoxing/fower-preset-miaoxing/commit/13f3e60e6a4992737d4168059b63703dc090572a))
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.0.0` to `8.0.1`
+
 # [0.2.0](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.1.0...v0.2.0) (2021-10-28)
 
 
