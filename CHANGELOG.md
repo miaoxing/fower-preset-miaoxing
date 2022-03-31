@@ -1,3 +1,10 @@
+## [0.2.3](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.2...v0.2.3) (2022-03-31)
+
+
+### Features
+
+* 更新 `fower` 到 `^1.70.0` ([972f6d7](https://github.com/miaoxing/fower-preset-miaoxing/commit/972f6d7f7520074383448db5561eaaddc60f59bc))
+
 ## [0.2.2](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.1...v0.2.2) (2022-02-05)
 
 
