@@ -1,3 +1,10 @@
+## [0.2.8](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.7...v0.2.8) (2023-04-18)
+
+
+### Bug Fixes
+
+* **fower-preset-miaoxing:** 解决版本依赖错误 ([e4cf64c](https://github.com/miaoxing/fower-preset-miaoxing/commit/e4cf64c2bdac9d669e8d90fabe4f01ea467990a0))
+
 ## [0.2.7](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.6...v0.2.7) (2023-01-01)
 
 
