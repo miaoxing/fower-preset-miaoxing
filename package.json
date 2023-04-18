@@ -23,5 +23,8 @@
   "peerDependencies": {
     "react": ">=16.13.1",
     "react-dom": ">=16.13.1"
+  },
+  "resolutions": {
+    "@fower/taro/**/@fower/core": "~1.75.0"
   }
 }
