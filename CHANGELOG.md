@@ -1,3 +1,13 @@
+## [0.2.12](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.11...v0.2.12) (2023-11-30)
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.2.3` to `8.2.4`
+
 ## [0.2.11](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.10...v0.2.11) (2023-09-02)
 
 
