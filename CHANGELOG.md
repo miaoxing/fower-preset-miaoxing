@@ -1,3 +1,10 @@
+## [0.2.15](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.14...v0.2.15) (2024-01-31)
+
+
+### Features
+
+* 更新 `react` 支持 18 ([8f3a236](https://github.com/miaoxing/fower-preset-miaoxing/commit/8f3a236a7439813b5c95b5e44e2216031f3515c3))
+
 ## [0.2.14](https://github.com/miaoxing/fower-preset-miaoxing/compare/v0.2.13...v0.2.14) (2024-01-08)
 
 
